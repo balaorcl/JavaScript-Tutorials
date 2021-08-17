@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mystyle {
+            width: 300px;
+            height: 50px;
+            background-color: coral;
+            color: white;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <p>Click the button to add the "mystyle" class to DIV.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p><strong>Note:</strong>The classList property is not supported in IE9 and earlier versions.</p>
+
+    <div id="myDIV">
+        I am DIV element
+    </div>
+
+    <script>
+        function myFunction() {
+            // Add the "mystyle" class to a <div> element
+            document.getElementById("myDIV").classList.add("mystyle");
+        }
+    </script>
+
+</body>
+</html>
